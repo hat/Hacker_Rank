@@ -30,7 +30,7 @@ int main() {
     for (int j = 0; j < num_entries; j++)
     {
         getline(cin, search);
-        if (phone_book.count(search) > 0)
+        if (phone_book.find(search) != phone_book.end())
             cout << search << "=" << phone_book[search] << endl;
         else
             cout << "Not found" << endl;
